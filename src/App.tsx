@@ -13,7 +13,7 @@ useEffect(() => {
 
   return (
     <>
-      <p>Data is {data}</p>
+     
       <p>{JSON.stringify(data)}</p>
     </>
   )
