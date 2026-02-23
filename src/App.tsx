@@ -11,16 +11,19 @@ useEffect(() => {
 }, [])
 
 
- return (
-  <>
-    {data && (
-      <div>
-        <p>{data.results[0].name.first} {data.results[0].name.last}</p>
-        <p>{data.results[0].email}</p>
-        <img src={data.results[0].picture.medium} />
-      </div>
-    )}
-  </>
-)
 
-export default App
+
+  return (
+    <>
+      {data && (
+        <div>
+          <p>{data.results[0].name.first} {data.results[0].name.last}</p>
+          <p>{data.results[0].email}</p>
+          <img src={data.results[0].picture.medium} />
+        </div>
+      )}
+    </>
+  )
+}
+
+export default App;
